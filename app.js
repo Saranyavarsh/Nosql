@@ -59,4 +59,15 @@ app.post('/store_stationaryproduct',async (req,res)=>{
   return res.redirect('/?status=1');
 })
 
+app.post('/update_stationaryproduct/:edit_id',async (req,res)=>{
+  let database = await dbo.getDatabase();
+  const collection = database.collection('stationaryproducts');
+  let stationaryproduct= { name: req.body.name, quantity: req.body.quantity,price:req.body.price  };
+  let edit_id = req.params.edit_id;
+  
+  await collection.updateOne({_id:ObjectID(edit_id)},{$set:stationaryproduct});
+  return res.redirect('/?status=2');
+})
+
+app.listen(5000,()=>{console.log('Listening to 5000 port');})
   
