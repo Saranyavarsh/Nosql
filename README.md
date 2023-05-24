@@ -35,6 +35,24 @@ Ensure the server starts without any errors.
 Access the application in your web browser by navigating to the appropriate URL (e.g., http://localhost:8000).
 
 
+**EXPLANATION :**
+
+The provided code is written in HTML and uses a templating language to dynamically generate the web page content. Here's an explanation of the different parts:
+
+**STRUCTURE OF HTML :**
+
+The code begins with the standard HTML structure. It defines the document type, the HTML language, and includes the necessary metadata in the section.
+
+The section contains the main content of the page.
+
+
+
+
+
+
+
+
+
 
 
 
