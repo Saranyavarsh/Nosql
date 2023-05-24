@@ -61,6 +61,11 @@ If the edit_id variable is present, the code displays an edit form. The form's a
 If the edit_id variable is not present, the code displays a create form. The form's action attribute specifies the endpoint to handle the form submission for creating a stationaryproduct.
 
 
+**PRODUCTS LIST:**
+
+
+
+
 
 
 
