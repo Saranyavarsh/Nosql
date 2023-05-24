@@ -46,8 +46,19 @@ The code begins with the standard HTML structure. It defines the document type, 
 The section contains the main content of the page.
 
 
+**CREATE :**
+
+The code checks if the edit_id variable is present. If it is, the page displays an edit form. Otherwise, it displays a create form.
 
 
+**EDIT FORM :**
+
+If the edit_id variable is present, the code displays an edit form. The form's action attribute specifies the endpoint to handle the form submission for updating a stationaryproduct with the given edit_id.
+
+
+**CREATE FORM :**
+
+If the edit_id variable is not present, the code displays a create form. The form's action attribute specifies the endpoint to handle the form submission for creating a stationaryproduct.
 
 
 
