@@ -16,3 +16,48 @@
     
 </head>
 <body>
+
+    <h1 style="color:rgb(17,255,120)">STATIONARY STORE MANAGEMENT SYSTEM</h1>
+    {{message}}
+    <br>
+    {{#if edit_id}}
+     <h3>Edit</h3>
+    <form method="post" action="/update_stationaryproduct/{{edit_id}}">
+        <label for="">ITEM NAME:</label>
+        <input type="text" name="name" value="{{edit_stationaryproduct.name}}">
+        <br><br>
+        <label for="">QUANTITY OF ITEM:</label>
+        <input type="text" name="quantity" value="{{edi_stationaryproduct.quantity}}">
+        <br><br>
+        <label for="">PRICE:</label>
+        <input type="text" name="price" value="{{edit_stationaryproduct.price}}">
+        <br><br>
+        <input type="submit" >
+    </form><br><br>
+    {{else}}
+    <h3>Create</h3>
+    <form method="post" action="/store_stationaryproduct">
+    
+        <label for="">ITEM NAME:</label>
+        <input type="text" name="name">
+        <br><br>
+        <label for="">QUANTITY OF PRODUCT</label>
+        <input type="text" name="quantity">
+        <br><br>
+        <label for="">PRICE</label>
+        <input type="text" name="price">
+        <br><br>
+        <input type="submit" >
+    </form><br><br>
+      
+    {{/if}}
+    
+    <ul>    
+        
+       {{#each stationaryproduct}}
+       <li> {{this.name}} - {{this.quantity}} - {{this.price}} <a href="/?edit_id={{this._id}}">Edit</a>  <a href="/?delete_id={{this._id}}" onclick="return confirm('Are you sure want to delete?')" >Delete</a></li> 
+       {{/each}}
+     </ul>
+</body>
+</html>
+        
