@@ -63,10 +63,18 @@ If the edit_id variable is not present, the code displays a create form. The for
 
 **PRODUCTS LIST:**
 
+The code uses a loop ({{#each stationaryproduct}}) to iterate over a list of movies.
+
+For each movie, it generates an
+
+element containing the movie's name and director. It also includes two links: "Edit" and "Delete". The "Edit" link includes the movie's _id as a query parameter (edit_id={{this._id}}) to identify which movie to edit. The "Delete" link includes the movie's _id as a query parameter (delete_id={{this._id}}). It also includes an onclick event to show a confirmation dialog before deleting the movie.
 
 
+**SYNTAX :**
 
+The code uses a templating language (not specified in the code snippet) to insert dynamic values into the HTML. The placeholders ({{message}}, {{#if edit_id}}, `
 
+{{edit_id}}, {{edit_stationaryproduct.name}}, {{edit_stationaryproduct.quantity}},{{edit_stationaryproduct.price}}, {{#each stationaryproduct}}, {{this.name}}, {{this.quantity}}, {{this.price}}`) are replaced with actual values when the page is rendered.
 
 
 
