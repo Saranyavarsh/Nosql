@@ -77,6 +77,8 @@ The code uses a templating language (not specified in the code snippet) to inser
 {{edit_id}}, {{edit_stationaryproduct.name}}, {{edit_stationaryproduct.quantity}},{{edit_stationaryproduct.price}}, {{#each stationaryproduct}}, {{this.name}}, {{this.quantity}}, {{this.price}}`) are replaced with actual values when the page is rendered.
 
 
+**CONCLUSION :**
 
+This code snippet demonstrates a basic web application that allows users to perform CRUD operations (Create, Read, Update, Delete) on a collection of stationary products stored in a MongoDB database. It provides forms for creating new stationary products and editing existing ones, as well as displaying a list of stationary products with options to edit or delete each stationary product.
 
 
